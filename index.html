@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brian Mwai — Software and Design Engineer</title>
+<title>Brian Mwai — Forward Deployed Engineer</title>
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet, notranslate">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="referrer" content="no-referrer">
@@ -13,7 +13,6 @@
 :root{
   --ink:#16181c; --muted:#5f6570; --faint:#8b919c;
   --bg:#fbfaf8; --card:#ffffff; --rule:#e3e0da; --accent:#2f5d3f;
-  --measure:52rem;
 }
 @media (prefers-color-scheme: dark){
   :root{ --ink:#e8e6e2; --muted:#a2a7b0; --faint:#767c87;
@@ -26,75 +25,87 @@ body{
   font:400 16px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
   font-feature-settings:"kern" 1,"liga" 1;
 }
-main{max-width:var(--measure); margin:0 auto; padding:clamp(1.75rem,5vw,4.5rem) clamp(1.1rem,4vw,2rem) 5rem}
+main{max-width:52rem; margin:0 auto; padding:clamp(1.75rem,5vw,4.5rem) clamp(1.1rem,4vw,2rem) 5rem}
 a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 32%, transparent)}
 a:hover{border-bottom-color:var(--accent)}
 
-header{margin-bottom:2.5rem}
-h1{
-  margin:0; font-size:clamp(2.1rem,7vw,3.1rem); line-height:1.02;
-  letter-spacing:-.033em; font-weight:640;
+h1{margin:0; font-size:clamp(2.1rem,7vw,3.1rem); line-height:1.02; letter-spacing:-.033em; font-weight:640}
+.role{margin:.5rem 0 0; font-size:1.12rem; font-weight:560; letter-spacing:-.006em}
+.role-sub{margin:.2rem 0 0; color:var(--muted); font-size:.95rem}
+.meta{margin:1.2rem 0 0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:.35rem 1.1rem; font-size:.9rem; color:var(--muted)}
+.pitch{
+  margin:1.7rem 0 0; padding-top:1.5rem; border-top:1px solid var(--rule);
+  font-size:1.13rem; line-height:1.5; max-width:44rem; letter-spacing:-.008em;
 }
-.role{margin:.45rem 0 0; color:var(--muted); font-size:1.05rem}
-.meta{
-  margin:1.25rem 0 0; padding:0; list-style:none;
-  display:flex; flex-wrap:wrap; gap:.35rem 1.1rem;
-  font-size:.9rem; color:var(--muted);
-}
-.summary{
-  margin:1.75rem 0 0; padding-top:1.5rem; border-top:1px solid var(--rule);
-  font-size:1.08rem; line-height:1.6; max-width:44rem;
-}
-
-.actions{display:flex; flex-wrap:wrap; gap:.6rem; margin:1.75rem 0 0}
-.btn{
-  display:inline-block; padding:.6rem 1.05rem; border-radius:8px;
-  font-size:.9rem; font-weight:520; border:1px solid var(--rule);
-  background:var(--card); color:var(--ink);
-}
+.actions{display:flex; flex-wrap:wrap; gap:.6rem; margin:1.7rem 0 0}
+.btn{display:inline-block; padding:.6rem 1.05rem; border-radius:8px; font-size:.9rem; font-weight:520; border:1px solid var(--rule); background:var(--card); color:var(--ink)}
 .btn:hover{border-color:var(--accent)}
 .btn-primary{background:var(--accent); border-color:var(--accent); color:var(--bg)}
-.btn-primary:hover{filter:brightness(1.08)}
 
-section{margin-top:3rem}
-h2{
-  margin:0 0 1.15rem; font-size:.735rem; font-weight:640;
-  letter-spacing:.14em; text-transform:uppercase; color:var(--faint);
-  padding-bottom:.5rem; border-bottom:1px solid var(--rule);
-}
+section{margin-top:2.6rem}
+h2{margin:0 0 1.1rem; font-size:.735rem; font-weight:640; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); padding-bottom:.5rem; border-bottom:1px solid var(--rule)}
 
-.rows{display:grid; gap:1.05rem}
+.rows{display:grid; gap:1rem; margin:0}
 .row{display:grid; grid-template-columns:9.5rem 1fr; gap:.35rem 1.5rem}
 .row dt{font-weight:600; font-size:.9rem; padding-top:.09rem}
 .row dd{margin:0; color:var(--muted)}
 @media (max-width:34rem){ .row{grid-template-columns:1fr; gap:.15rem} }
 
-.job{margin-top:1.75rem}
+.loop{display:grid; gap:.8rem; margin:0 0 1rem}
+.loop .row dt{color:var(--ink)}
+.aside{margin:0; color:var(--muted); font-size:.95rem}
+.aside + .aside{margin-top:.5rem}
+
+.job{margin-top:1.6rem}
 .job:first-child{margin-top:0}
 .job-head{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.25rem 1rem}
 .job-title{margin:0; font-size:1.06rem; font-weight:620; letter-spacing:-.008em}
 .job-when{font-size:.85rem; color:var(--faint); font-variant-numeric:tabular-nums; white-space:nowrap}
-.job-org{margin:.12rem 0 .55rem; font-size:.9rem; color:var(--muted)}
+.job-org{margin:.12rem 0 .5rem; font-size:.9rem; color:var(--muted)}
 .job ul{margin:0; padding-left:1.05rem; color:var(--muted)}
 .job li{margin:.3rem 0}
 
-.entry{margin-top:1.05rem}
+.entry{margin-top:.95rem}
 .entry:first-child{margin-top:0}
 .entry-name{font-weight:620}
 .entry p{margin:.1rem 0 0; color:var(--muted)}
 .note{color:var(--faint); font-size:.85rem}
+.print-only{display:none}
 
-footer{
-  margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--rule);
-  font-size:.85rem; color:var(--faint); display:flex; flex-wrap:wrap;
-  gap:.4rem 1.25rem; justify-content:space-between;
-}
+footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); font-size:.85rem; color:var(--faint); display:flex; flex-wrap:wrap; gap:.4rem 1.25rem; justify-content:space-between}
 
+@page{ size:A4; margin:11mm 13mm; }
 @media print{
-  :root{--ink:#000;--muted:#333;--faint:#666;--bg:#fff;--card:#fff;--rule:#ccc;--accent:#000}
-  .actions{display:none}
+  :root{--ink:#111;--muted:#333;--faint:#666;--bg:#fff;--card:#fff;--rule:#c9c6c0;--accent:#111}
+  body{font-size:9pt; line-height:1.32}
   main{padding:0; max-width:none}
-  section{break-inside:avoid}
+  a{border-bottom:0; color:#111}
+  .actions,footer{display:none}
+  .print-only{display:inline}
+  h1{font-size:21pt}
+  .role{font-size:11pt}
+  .role-sub{font-size:9pt}
+  .meta{font-size:8.4pt; gap:.15rem .8rem; margin-top:.6rem}
+  .pitch{font-size:9.8pt; margin-top:.65rem; padding-top:.55rem}
+  section{margin-top:.92rem}
+  h2{font-size:7.2pt; margin-bottom:.42rem; padding-bottom:.2rem}
+  .rows,.loop{gap:.32rem}
+  .row{grid-template-columns:8.2rem 1fr; gap:.2rem 1rem}
+  .row dt{font-size:9.4pt}
+  .job{margin-top:.6rem; break-inside:avoid}
+  .job-title{font-size:10.2pt}
+  .job-org{margin-bottom:.22rem}
+  .job li{margin:.06rem 0}
+  .entry{margin-top:.34rem; break-inside:avoid}
+  h2{break-after:avoid}
+  /* rem is tied to the root, not to the print body size, so anything sized in
+     rem stays at screen scale unless it is pinned here. */
+  .aside{font-size:9pt}
+  .aside + .aside{margin-top:.28rem}
+  .job-when{font-size:8.4pt}
+  .job-org{font-size:8.6pt}
+  .note{font-size:8.2pt}
+  .loop{margin-bottom:.45rem}
 }
 </style>
 </head>
@@ -103,18 +114,20 @@ footer{
 
 <header>
   <h1>Brian Mwai</h1>
-  <p class="role">Software and Design Engineer</p>
+  <p class="role">Forward Deployed Engineer</p>
+  <p class="role-sub">Independent practice, remote. I also teach AI, to beginners and to developers.</p>
   <ul class="meta">
     <li>Nairobi, Kenya</li>
     <li><a href="https://brianmwai.com" rel="noopener noreferrer">brianmwai.com</a></li>
     <li><a href="https://github.com/brn-mwai" rel="noopener noreferrer">github.com/brn-mwai</a></li>
     <li><a href="https://linkedin.com/in/brnmwai" rel="noopener noreferrer">linkedin.com/in/brnmwai</a></li>
-    <li><span id="reach" data-k="aGV5QGJyaWFubXdhaS5jb20=">Contact</span></li>
+    <li><span id="reach" data-k="aGV5QGJyaWFubXdhaS5jb20="></span></li>
+    <li class="print-only"><span id="tel" data-k="KzI1NCA3NDAgNjkwMDk5"></span></li>
   </ul>
 
-  <p class="summary">
-    I build web platforms and AI tools, and teach organisations how to use AI in
-    the work they already do. Final-year physics student in Nairobi.
+  <p class="pitch">
+    I help companies turn their messy, scattered data into an AI system that
+    answers the questions they actually make decisions on.
   </p>
 
   <div class="actions">
@@ -125,13 +138,32 @@ footer{
 </header>
 
 <section>
+  <h2>The practice</h2>
+  <dl class="loop">
+    <div class="row"><dt>Embed</dt><dd>Work inside the client's operation until the real process is visible, rather than the one written down.</dd></div>
+    <div class="row"><dt>Model</dt><dd>Turn what is there into an ontology and a knowledge graph: the entities the business actually runs on, joined, with every value recording where it came from.</dd></div>
+    <div class="row"><dt>Deploy</dt><dd>Put agents on top of that model, so answers are grounded in defined records rather than guessed from text.</dd></div>
+    <div class="row"><dt>Decide</dt><dd>Land on a decision the client acts on. The engagement is sold as that outcome, not as hours.</dd></div>
+  </dl>
+  <p class="aside">
+    The modelling is the edge. Ontology and knowledge graph work is unusual for a
+    solo engineer, and it is the layer Palantir sells as its Ontology product.
+  </p>
+  <p class="aside">
+    African mobility and logistics are evidence of what the method does, not the
+    boundary of who it is for.
+  </p>
+</section>
+
+<section>
   <h2>Skills</h2>
   <dl class="rows">
+    <div class="row"><dt>Ontology and graphs</dt><dd>Modelling a business as entities, relationships and events; knowledge graphs; recording where each figure came from so an answer can be traced back to a source.</dd></div>
     <div class="row"><dt>AI, building</dt><dd>Assistants and agents that carry out multi-step work; question answering over a company's own documents (RAG, embeddings, vector search); extracting data from invoices, contracts and forms; voice interfaces; connecting models to existing systems (MCP, function calling); several models used together, with fallbacks. Claude, GPT, Gemini and open models.</dd></div>
-    <div class="row"><dt>AI, safety and trust</dt><dd>Ontologies and knowledge graphs, so a model works from a defined picture of the business instead of guessing; checking output against those rules before anyone acts on it; a person approves anything consequential; recording where each figure came from so an answer can be traced; measuring quality before and after release.</dd></div>
+    <div class="row"><dt>AI, safety and trust</dt><dd>Checking model output against the modelled rules before anyone acts on it; a person approves anything consequential; measuring quality before and after release.</dd></div>
     <div class="row"><dt>AI, with people</dt><dd>Training technical and non-technical teams; reviewing how a team works to find the steps worth automating; advising which tasks to give a model and which to leave alone.</dd></div>
     <div class="row"><dt>Web</dt><dd>React, Next.js, TypeScript, Tailwind CSS, Node.js</dd></div>
-    <div class="row"><dt>Data</dt><dd>Convex, PostgreSQL, Python, mapping with OpenLayers, MapLibre and Mapbox</dd></div>
+    <div class="row"><dt>Data</dt><dd>Convex, PostgreSQL, Python, Rust, mapping with OpenLayers, MapLibre and Mapbox</dd></div>
     <div class="row"><dt>Design</dt><dd>Interface design, brand identity, design systems, Figma</dd></div>
   </dl>
 </section>
@@ -148,7 +180,7 @@ footer{
 
 <section>
   <h2>What I build for clients</h2>
-  <p style="margin:0;color:var(--muted)">
+  <p class="aside">
     An assistant inside a tool your team already uses, answering questions from
     your own data · An agent that completes a repeated multi-step task, with a
     person approving what matters · A pipeline that reads documents into
@@ -161,11 +193,12 @@ footer{
   <h2>Experience</h2>
 
   <article class="job">
-    <div class="job-head"><h3 class="job-title">AI Consultant and Trainer</h3><span class="job-when">Ongoing</span></div>
-    <p class="job-org">Independent, Nairobi</p>
+    <div class="job-head"><h3 class="job-title">Forward Deployed Engineer</h3><span class="job-when">Ongoing</span></div>
+    <p class="job-org">Independent practice, remote · <a href="https://brianmwai.com" rel="noopener noreferrer">brianmwai.com</a></p>
     <ul>
-      <li>Run AI training for teams, both technical and non-technical staff.</li>
-      <li>Review how a team works, identify the steps worth automating, then build the automation.</li>
+      <li>Embed with a client, model their domain as an ontology and knowledge graph, deploy agents on top of it, and land on a decision they act on. Sold as the deployed outcome rather than as hours.</li>
+      <li>Run AI training alongside the engagements, for technical and non-technical staff.</li>
+      <li>Lead engagement: Odyssey, delivered for Celeri Group.</li>
     </ul>
   </article>
 
@@ -189,7 +222,7 @@ footer{
 
   <article class="job">
     <div class="job-head"><h3 class="job-title">Co-founder and Design Engineer</h3><span class="job-when">Jul 2025 – Present</span></div>
-    <p class="job-org">AXI Mobility, Nairobi and Delaware</p>
+    <p class="job-org">AXI Mobility, Nairobi and Delaware · <a href="https://www.aximobility.com" rel="noopener noreferrer">aximobility.com</a></p>
     <ul>
       <li>Fleet management software for African transport operators. I do the design and the engineering: brand, design system, operator dashboard, driver app and website.</li>
       <li>Built an AI assistant into the dashboard that answers questions about the fleet and proposes actions for a person to approve. Set up vehicle tracking that works with hardware customers already own, designed for 10,000 vehicles.</li>
@@ -225,17 +258,18 @@ footer{
 
 <section>
   <h2>Selected projects</h2>
-  <div class="entry"><span class="entry-name">Cascade Bridge</span><p>Drought forecasting for Kenyan counties up to three months ahead, from seasonal weather forecasts rather than satellite images. Top 10, IGAD ICPAC hackathon, 2026, with Nature Cipher.</p></div>
-  <div class="entry"><span class="entry-name">Rovify</span><p>Events platform on Base. Third place globally, USD 20,000, Base Batches 001, 2025, from over 1,200 entries. Winner in the Africa round, with two teammates.</p></div>
+  <div class="entry"><span class="entry-name">Cascade Bridge</span> · <a href="https://naturecipher-drought.pages.dev" rel="noopener noreferrer">naturecipher-drought.pages.dev</a><p>Drought forecasting for Kenyan counties up to three months ahead, from seasonal weather forecasts rather than satellite images. Top 10, IGAD ICPAC hackathon, 2026, with Nature Cipher.</p></div>
+  <div class="entry"><span class="entry-name">Rovify</span> · <a href="https://rovify.io" rel="noopener noreferrer">rovify.io</a><p>Events platform on Base. Third place globally, USD 20,000, Base Batches 001, 2025, from over 1,200 entries. Winner in the Africa round, with two teammates.</p></div>
+  <div class="entry"><span class="entry-name">Oryn</span> · <a href="https://oryn.cc" rel="noopener noreferrer">oryn.cc</a><p>Reads invoices and contracts and turns them into payment links. Third place, AI Mashinani, run by the Claude community in Kenya, 2026.</p></div>
   <div class="entry"><span class="entry-name">PayStream</span><p>Payroll paid in stablecoin, with the compliance and conversion steps automated. First place, Qdrant track, AI Genesis, Dubai, 2025.</p></div>
-  <div class="entry"><span class="entry-name">Oryn</span><p>Reads invoices and contracts and turns them into payment links. Third place, AI Mashinani, run by the Claude community in Kenya, 2026.</p></div>
 </section>
 
 <section id="built">
   <h2>Tools I have built</h2>
-  <div class="entry"><span class="entry-name">Wispy</span><p>Autonomous AI agent platform. One command gives you a running agent that can act and communicate across 11 channels. Published on npm as wispy-ai. Built for the Google Gemini hackathon.</p></div>
-  <div class="entry"><span class="entry-name">Scribe</span><p>Keeps a repository's agent instructions accurate on its own. When the code changes and the docs go stale, it notices and opens a merge request to fix them.</p></div>
-  <div class="entry"><span class="entry-name">codegraph</span><p>Turns a codebase into a map an AI can navigate. Parses the repo with tree-sitter into a typed graph, so an agent can find where something is defined and what breaks if it changes, instead of searching blindly.</p></div>
+  <div class="entry"><span class="entry-name">FDE Accelerator</span><p>The engine behind the practice. Turns a client's scattered data into an ontology and knowledge graph, sharpened on each paid engagement. Rust backend, running as the FDE Workbench inside Wispy Console. Kept internal rather than sold as a product.</p></div>
+  <div class="entry"><span class="entry-name">Wispy</span> · <a href="https://wispy.cc" rel="noopener noreferrer">wispy.cc</a> · <a href="https://www.npmjs.com/package/wispy-ai" rel="noopener noreferrer">npm</a> · <a href="https://github.com/brn-mwai/wispy" rel="noopener noreferrer">source</a><p>Autonomous AI agent platform. One command gives you a running agent that can act and communicate across 11 channels. Built for the Google Gemini hackathon.</p></div>
+  <div class="entry"><span class="entry-name">codegraph</span> · <a href="https://github.com/brn-mwai/codegraph" rel="noopener noreferrer">github.com/brn-mwai/codegraph</a><p>Turns a codebase into a map an AI can navigate. Parses the repo with tree-sitter into a typed graph, so an agent can find where something is defined and what breaks if it changes, instead of searching blindly.</p></div>
+  <div class="entry"><span class="entry-name">Scribe</span> · <a href="https://github.com/brn-mwai/scribe" rel="noopener noreferrer">github.com/brn-mwai/scribe</a><p>Keeps a repository's agent instructions accurate on its own. When the code changes and the docs go stale, it notices and opens a merge request to fix them.</p></div>
   <div class="entry"><span class="entry-name">Agent Reach</span><p>Gives an AI agent access to the internet across 15 platforms through one interface, with fallbacks when a source is unavailable.</p></div>
 </section>
 
@@ -257,7 +291,7 @@ footer{
 
 <section>
   <h2>Referees</h2>
-  <p style="margin:0;color:var(--muted)">Available on request.</p>
+  <p class="aside">Available on request.</p>
 </section>
 
 <footer>
@@ -268,22 +302,28 @@ footer{
 </main>
 
 <script>
-// The address is assembled here rather than written into the markup, so a
-// crawler reading the source finds no address to take.
+// Addresses are assembled here rather than written into the markup, so a
+// crawler reading the source finds nothing to take. The phone number is
+// print-only: it belongs on the CV a person downloads, not on an open page.
 (function () {
-  var el = document.getElementById("reach");
-  if (!el) return;
-  var who = atob(el.getAttribute("data-k"));
-  el.removeAttribute("data-k");
-  var a = document.createElement("a");
-  a.textContent = who;
-  a.rel = "nofollow noreferrer";
-  a.addEventListener("click", function (e) {
-    e.preventDefault();
-    window.location.href = "mai" + "lto:" + who;
-  });
-  a.href = "#";
-  el.replaceWith(a);
+  function reveal(id, prefix) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var value = atob(el.getAttribute("data-k"));
+    el.removeAttribute("data-k");
+    if (!prefix) { el.textContent = value; return; }
+    var link = document.createElement("a");
+    link.textContent = value;
+    link.href = "#";
+    link.rel = "nofollow noreferrer";
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = prefix + value;
+    });
+    el.replaceWith(link);
+  }
+  reveal("reach", "mai" + "lto:");
+  reveal("tel", null);
 })();
 </script>
 </body>
