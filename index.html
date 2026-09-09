@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian Mwai — Software and Design Engineer</title>
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet, notranslate">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Curriculum vitae.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+<style>
+:root{
+  --ink:#16181c; --muted:#5f6570; --faint:#8b919c;
+  --bg:#fbfaf8; --card:#ffffff; --rule:#e3e0da; --accent:#2f5d3f;
+  --measure:52rem;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ink:#e8e6e2; --muted:#a2a7b0; --faint:#767c87;
+         --bg:#111214; --card:#17181b; --rule:#2a2c31; --accent:#8fc0a0; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 16px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  font-feature-settings:"kern" 1,"liga" 1;
+}
+main{max-width:var(--measure); margin:0 auto; padding:clamp(1.75rem,5vw,4.5rem) clamp(1.1rem,4vw,2rem) 5rem}
+a{color:var(--accent); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--accent) 32%, transparent)}
+a:hover{border-bottom-color:var(--accent)}
+
+header{margin-bottom:2.5rem}
+h1{
+  margin:0; font-size:clamp(2.1rem,7vw,3.1rem); line-height:1.02;
+  letter-spacing:-.033em; font-weight:640;
+}
+.role{margin:.45rem 0 0; color:var(--muted); font-size:1.05rem}
+.meta{
+  margin:1.25rem 0 0; padding:0; list-style:none;
+  display:flex; flex-wrap:wrap; gap:.35rem 1.1rem;
+  font-size:.9rem; color:var(--muted);
+}
+.summary{
+  margin:1.75rem 0 0; padding-top:1.5rem; border-top:1px solid var(--rule);
+  font-size:1.08rem; line-height:1.6; max-width:44rem;
+}
+
+.actions{display:flex; flex-wrap:wrap; gap:.6rem; margin:1.75rem 0 0}
+.btn{
+  display:inline-block; padding:.6rem 1.05rem; border-radius:8px;
+  font-size:.9rem; font-weight:520; border:1px solid var(--rule);
+  background:var(--card); color:var(--ink);
+}
+.btn:hover{border-color:var(--accent)}
+.btn-primary{background:var(--accent); border-color:var(--accent); color:var(--bg)}
+.btn-primary:hover{filter:brightness(1.08)}
+
+section{margin-top:3rem}
+h2{
+  margin:0 0 1.15rem; font-size:.735rem; font-weight:640;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--faint);
+  padding-bottom:.5rem; border-bottom:1px solid var(--rule);
+}
+
+.rows{display:grid; gap:1.05rem}
+.row{display:grid; grid-template-columns:9.5rem 1fr; gap:.35rem 1.5rem}
+.row dt{font-weight:600; font-size:.9rem; padding-top:.09rem}
+.row dd{margin:0; color:var(--muted)}
+@media (max-width:34rem){ .row{grid-template-columns:1fr; gap:.15rem} }
+
+.job{margin-top:1.75rem}
+.job:first-child{margin-top:0}
+.job-head{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.25rem 1rem}
+.job-title{margin:0; font-size:1.06rem; font-weight:620; letter-spacing:-.008em}
+.job-when{font-size:.85rem; color:var(--faint); font-variant-numeric:tabular-nums; white-space:nowrap}
+.job-org{margin:.12rem 0 .55rem; font-size:.9rem; color:var(--muted)}
+.job ul{margin:0; padding-left:1.05rem; color:var(--muted)}
+.job li{margin:.3rem 0}
+
+.entry{margin-top:1.05rem}
+.entry:first-child{margin-top:0}
+.entry-name{font-weight:620}
+.entry p{margin:.1rem 0 0; color:var(--muted)}
+.note{color:var(--faint); font-size:.85rem}
+
+footer{
+  margin-top:4rem; padding-top:1.5rem; border-top:1px solid var(--rule);
+  font-size:.85rem; color:var(--faint); display:flex; flex-wrap:wrap;
+  gap:.4rem 1.25rem; justify-content:space-between;
+}
+
+@media print{
+  :root{--ink:#000;--muted:#333;--faint:#666;--bg:#fff;--card:#fff;--rule:#ccc;--accent:#000}
+  .actions{display:none}
+  main{padding:0; max-width:none}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Brian Mwai</h1>
+  <p class="role">Software and Design Engineer</p>
+  <ul class="meta">
+    <li>Nairobi, Kenya</li>
+    <li><a href="https://brianmwai.com" rel="noopener noreferrer">brianmwai.com</a></li>
+    <li><a href="https://github.com/brn-mwai" rel="noopener noreferrer">github.com/brn-mwai</a></li>
+    <li><a href="https://linkedin.com/in/brnmwai" rel="noopener noreferrer">linkedin.com/in/brnmwai</a></li>
+    <li><span id="reach" data-k="aGV5QGJyaWFubXdhaS5jb20=">Contact</span></li>
+  </ul>
+
+  <p class="summary">
+    I build web platforms and AI tools, and teach organisations how to use AI in
+    the work they already do. Final-year physics student in Nairobi.
+  </p>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="cv-brian-mwai.pdf">Download CV, PDF</a>
+    <a class="btn" href="#experience">Experience</a>
+    <a class="btn" href="#built">Things I have built</a>
+  </div>
+</header>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="rows">
+    <div class="row"><dt>AI, building</dt><dd>Assistants and agents that carry out multi-step work; question answering over a company's own documents (RAG, embeddings, vector search); extracting data from invoices, contracts and forms; voice interfaces; connecting models to existing systems (MCP, function calling); several models used together, with fallbacks. Claude, GPT, Gemini and open models.</dd></div>
+    <div class="row"><dt>AI, safety and trust</dt><dd>Ontologies and knowledge graphs, so a model works from a defined picture of the business instead of guessing; checking output against those rules before anyone acts on it; a person approves anything consequential; recording where each figure came from so an answer can be traced; measuring quality before and after release.</dd></div>
+    <div class="row"><dt>AI, with people</dt><dd>Training technical and non-technical teams; reviewing how a team works to find the steps worth automating; advising which tasks to give a model and which to leave alone.</dd></div>
+    <div class="row"><dt>Web</dt><dd>React, Next.js, TypeScript, Tailwind CSS, Node.js</dd></div>
+    <div class="row"><dt>Data</dt><dd>Convex, PostgreSQL, Python, mapping with OpenLayers, MapLibre and Mapbox</dd></div>
+    <div class="row"><dt>Design</dt><dd>Interface design, brand identity, design systems, Figma</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Tools I work with</h2>
+  <dl class="rows">
+    <div class="row"><dt>AI</dt><dd>Claude Code · Claude, GPT and Gemini APIs · MCP servers · Ollama for local models · ElevenLabs and fish.audio for voice · vector databases</dd></div>
+    <div class="row"><dt>Knowledge</dt><dd>Ontologies · knowledge graphs · Obsidian</dd></div>
+    <div class="row"><dt>Build and run</dt><dd>Git and GitHub · Zed · Vercel · Cloudflare · AWS · Convex · PostgreSQL</dd></div>
+    <div class="row"><dt>Design</dt><dd>Figma · Blender</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>What I build for clients</h2>
+  <p style="margin:0;color:var(--muted)">
+    An assistant inside a tool your team already uses, answering questions from
+    your own data · An agent that completes a repeated multi-step task, with a
+    person approving what matters · A pipeline that reads documents into
+    structured records · A data model that makes answers traceable · Training so
+    your staff can run these tools without me
+  </p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">AI Consultant and Trainer</h3><span class="job-when">Ongoing</span></div>
+    <p class="job-org">Independent, Nairobi</p>
+    <ul>
+      <li>Run AI training for teams, both technical and non-technical staff.</li>
+      <li>Review how a team works, identify the steps worth automating, then build the automation.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">Technical Lead and Co-founder</h3><span class="job-when">Jun 2026 – Present</span></div>
+    <p class="job-org">REVLOG, Nairobi</p>
+    <ul>
+      <li>Battery collection and recycling business, seven co-founders. I own the technical side: data model, web portal and the tools field staff use.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">Software Engineer, contract</h3><span class="job-when">Mar 2026 – Jul 2026</span></div>
+    <p class="job-org">Celeri Group, Nairobi</p>
+    <ul>
+      <li>Sole developer on Odyssey, a map-based tool for investors assessing transport routes in Kenya. Delivered a working demo and investor pack in about two months.</li>
+      <li>Built the map covering all 47 counties: routes, roads, operators, schools, hospitals and fuel stations, up to 1,789 stations shown at once.</li>
+      <li>Designed the data model, 22 record types, with every value recording where it came from and when, so figures can be traced to a source.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">Co-founder and Design Engineer</h3><span class="job-when">Jul 2025 – Present</span></div>
+    <p class="job-org">AXI Mobility, Nairobi and Delaware</p>
+    <ul>
+      <li>Fleet management software for African transport operators. I do the design and the engineering: brand, design system, operator dashboard, driver app and website.</li>
+      <li>Built an AI assistant into the dashboard that answers questions about the fleet and proposes actions for a person to approve. Set up vehicle tracking that works with hardware customers already own, designed for 10,000 vehicles.</li>
+      <li>Represented the company at the Africa Climate Summit 2025 in Ethiopia, in the African Union Young Innovation Hub.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">Software Engineer</h3><span class="job-when">May 2025 – Aug 2025</span></div>
+    <p class="job-org">Kenya Space Agency, Nairobi</p>
+    <ul>
+      <li>Built AIMS, a satellite-based crop monitoring tool for Murang'a County, using React, TypeScript and OpenLayers. Land-cover comparison across 2022 and 2024, crop classification, weather and market prices by subcounty. Works offline, in English and Swahili.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">Founder and Designer</h3><span class="job-when">2023 – Present</span></div>
+    <p class="job-org">Formartly, Nairobi</p>
+    <ul>
+      <li>Creative studio. Brand identity, logo and merchandise design for clients, including merchandise for Sauti Sol.</li>
+    </ul>
+  </article>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <article class="job">
+    <div class="job-head"><h3 class="job-title">The Catholic University of Eastern Africa, Nairobi</h3><span class="job-when">2022 – expected 2026</span></div>
+    <p class="job-org">BSc Physics, final year. Research on how opinions spread and settle in groups.</p>
+    <p class="note" style="margin:0">Lead Designer, Google Developer Student Clubs, 2024 to January 2025.</p>
+  </article>
+</section>
+
+<section>
+  <h2>Selected projects</h2>
+  <div class="entry"><span class="entry-name">Cascade Bridge</span><p>Drought forecasting for Kenyan counties up to three months ahead, from seasonal weather forecasts rather than satellite images. Top 10, IGAD ICPAC hackathon, 2026, with Nature Cipher.</p></div>
+  <div class="entry"><span class="entry-name">Rovify</span><p>Events platform on Base. Third place globally, USD 20,000, Base Batches 001, 2025, from over 1,200 entries. Winner in the Africa round, with two teammates.</p></div>
+  <div class="entry"><span class="entry-name">PayStream</span><p>Payroll paid in stablecoin, with the compliance and conversion steps automated. First place, Qdrant track, AI Genesis, Dubai, 2025.</p></div>
+  <div class="entry"><span class="entry-name">Oryn</span><p>Reads invoices and contracts and turns them into payment links. Third place, AI Mashinani, run by the Claude community in Kenya, 2026.</p></div>
+</section>
+
+<section id="built">
+  <h2>Tools I have built</h2>
+  <div class="entry"><span class="entry-name">Wispy</span><p>Autonomous AI agent platform. One command gives you a running agent that can act and communicate across 11 channels. Published on npm as wispy-ai. Built for the Google Gemini hackathon.</p></div>
+  <div class="entry"><span class="entry-name">Scribe</span><p>Keeps a repository's agent instructions accurate on its own. When the code changes and the docs go stale, it notices and opens a merge request to fix them.</p></div>
+  <div class="entry"><span class="entry-name">codegraph</span><p>Turns a codebase into a map an AI can navigate. Parses the repo with tree-sitter into a typed graph, so an agent can find where something is defined and what breaks if it changes, instead of searching blindly.</p></div>
+  <div class="entry"><span class="entry-name">Agent Reach</span><p>Gives an AI agent access to the internet across 15 platforms through one interface, with fallbacks when a source is unavailable.</p></div>
+</section>
+
+<section>
+  <h2>Recognition and programmes</h2>
+  <dl class="rows">
+    <div class="row"><dt>AXI Mobility</dt><dd>KES 300,000 proof-of-concept grant, Kenya Climate Innovation Center, 2026 · Timbuktoo Green Tech Hub · NVIDIA Inception · 500 Global Pre-Acceleration Academy, Nairobi, October 2025 · African Union Young Innovation Hub, Africa Climate Summit 2025, Ethiopia</dd></div>
+    <div class="row"><dt>REVLOG</dt><dd>Finalist, ACEP Innovation Challenge, 2026 · Incubation and grant support from LOT29, GIZ, Siemens Stiftung and Seedstars</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Languages and interests</h2>
+  <dl class="rows">
+    <div class="row"><dt>Languages</dt><dd>English (native) · Kiswahili (fluent)</dd></div>
+    <div class="row"><dt>Interests</dt><dd>Drawing and illustration, national top 10 in Red Bull Doodle Art Kenya, 2023, from over 8,000 entries. Guitar. Hiking and the outdoors. Film.</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Referees</h2>
+  <p style="margin:0;color:var(--muted)">Available on request.</p>
+</section>
+
+<footer>
+  <span>Brian Mwai, Nairobi</span>
+  <span class="note">This page asks not to be indexed.</span>
+</footer>
+
+</main>
+
+<script>
+// The address is assembled here rather than written into the markup, so a
+// crawler reading the source finds no address to take.
+(function () {
+  var el = document.getElementById("reach");
+  if (!el) return;
+  var who = atob(el.getAttribute("data-k"));
+  el.removeAttribute("data-k");
+  var a = document.createElement("a");
+  a.textContent = who;
+  a.rel = "nofollow noreferrer";
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.location.href = "mai" + "lto:" + who;
+  });
+  a.href = "#";
+  el.replaceWith(a);
+})();
+</script>
+</body>
+</html>
