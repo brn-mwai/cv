@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brian Mwai — Forward Deployed and Design Engineer</title>
+<title>Brian Mwai - Forward Deployed and Design Engineer</title>
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet, notranslate">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="referrer" content="no-referrer">
@@ -71,6 +71,9 @@ h2{margin:0 0 1.1rem; font-size:.735rem; font-weight:640; letter-spacing:.14em; 
 .entry p{margin:.1rem 0 0; color:var(--muted)}
 .note{color:var(--faint); font-size:.85rem}
 .print-only{display:none}
+.referees{display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1rem 1.5rem}
+.referee p{margin:0; color:var(--muted)}
+.referee .entry-name{color:var(--ink)}
 
 footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); font-size:.85rem; color:var(--faint); display:flex; flex-wrap:wrap; gap:.4rem 1.25rem; justify-content:space-between}
 
@@ -106,6 +109,8 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
   .job-org{font-size:8.6pt}
   .note{font-size:8.2pt}
   .loop{margin-bottom:.45rem}
+  .referees{gap:.3rem 1rem}
+  .referee{break-inside:avoid}
 }
 </style>
 </head>
@@ -118,11 +123,10 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
   <p class="role-sub">Independent practice, remote. I also teach AI, to beginners and to developers.</p>
   <ul class="meta">
     <li>Nairobi, Kenya</li>
-    <li><a href="https://brianmwai.com" rel="noopener noreferrer">brianmwai.com</a></li>
     <li><a href="https://github.com/brn-mwai" rel="noopener noreferrer">github.com/brn-mwai</a></li>
     <li><a href="https://linkedin.com/in/brnmwai" rel="noopener noreferrer">linkedin.com/in/brnmwai</a></li>
-    <li><span id="reach" data-k="aGV5QGJyaWFubXdhaS5jb20="></span></li>
-    <li class="print-only"><span id="tel" data-k="KzI1NCA3NDAgNjkwMDk5"></span></li>
+    <li><span data-k="aW5mby5icm5td2FpQGdtYWlsLmNvbQ==" data-link="mail"></span></li>
+    <li class="print-only"><span data-k="KzI1NCA3NDAgNjkwMDk5"></span></li>
   </ul>
 
   <p class="pitch">
@@ -162,7 +166,7 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
     <div class="row"><dt>AI, building</dt><dd>Assistants and agents that carry out multi-step work; question answering over a company's own documents (RAG, embeddings, vector search); extracting data from invoices, contracts and forms; voice interfaces; connecting models to existing systems (MCP, function calling); several models used together, with fallbacks. Claude, GPT, Gemini and open models.</dd></div>
     <div class="row"><dt>AI, safety and trust</dt><dd>Checking model output against the modelled rules before anyone acts on it; a person approves anything consequential; measuring quality before and after release.</dd></div>
     <div class="row"><dt>AI, with people</dt><dd>Training technical and non-technical teams; reviewing how a team works to find the steps worth automating; advising which tasks to give a model and which to leave alone.</dd></div>
-    <div class="row"><dt>Web</dt><dd>React, Next.js, TypeScript, Tailwind CSS, Node.js</dd></div>
+    <div class="row"><dt>Web and desktop</dt><dd>React, Next.js, TypeScript, Tailwind CSS, Node.js; desktop apps with Tauri 2 and Electron</dd></div>
     <div class="row"><dt>Data</dt><dd>Convex, PostgreSQL, Python, Rust, mapping with OpenLayers, MapLibre and Mapbox</dd></div>
     <div class="row"><dt>Design</dt><dd>Interface design, brand identity, design systems, Figma</dd></div>
   </dl>
@@ -194,7 +198,7 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
 
   <article class="job">
     <div class="job-head"><h3 class="job-title">Forward Deployed and Design Engineer</h3><span class="job-when">Ongoing</span></div>
-    <p class="job-org">Independent practice, remote · <a href="https://brianmwai.com" rel="noopener noreferrer">brianmwai.com</a></p>
+    <p class="job-org">Independent practice, remote</p>
     <ul>
       <li>Embed with a client, model their domain as an ontology and knowledge graph, deploy agents on top of it, and land on a decision they act on. Sold as the deployed outcome rather than as hours.</li>
       <li>Run AI training alongside the engagements, for technical and non-technical staff.</li>
@@ -204,9 +208,12 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
 
   <article class="job">
     <div class="job-head"><h3 class="job-title">Technical Lead and Co-founder</h3><span class="job-when">Jun 2026 – Present</span></div>
-    <p class="job-org">REVLOG, Nairobi</p>
+    <p class="job-org">Revlog, Nairobi · <a href="https://revlog.africa" rel="noopener noreferrer">revlog.africa</a></p>
     <ul>
       <li>Battery collection and recycling business, seven co-founders. I own the technical side: data model, web portal and the tools field staff use.</li>
+      <li>Built CycleTrack, the custody record that follows each battery from producer to offtaker, with consoles for producers, offtakers, regulators, field staff and admin on one Convex backend. <a href="https://cycletrack.revlog.africa" rel="noopener noreferrer">cycletrack.revlog.africa</a></li>
+      <li>Built the public collection portal, where anyone can book a collection, report an unsafe battery or find a drop-off point. <a href="https://portal.revlog.africa" rel="noopener noreferrer">portal.revlog.africa</a></li>
+      <li>Pitched the company in the final of the ACEP Innovation Challenge at the Future of Energy Conference, Accra, August 2026.</li>
     </ul>
   </article>
 
@@ -251,7 +258,11 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
   <h2>Education</h2>
   <article class="job">
     <div class="job-head"><h3 class="job-title">The Catholic University of Eastern Africa, Nairobi</h3><span class="job-when">2022 – expected 2026</span></div>
-    <p class="job-org">BSc Physics, final year. Research on how opinions spread and settle in groups.</p>
+    <p class="job-org">BSc Physics, final year. Supervisor: Dr. Songa Mutambi.</p>
+    <ul>
+      <li>Dissertation: <em>Measuring the External Field: A Cortical-Proxy Content Observable and the Mean-Field Bound on Media-Driven Opinion Change</em>.</li>
+      <li>Built the instrument it rests on. Meta's TRIBE v2 model predicts how the cortex responds to a piece of media, and the index is the difference between networks linked to emotion and to reasoning. Scanned a 400-item media corpus; a second full scan agrees at ICC 0.87. From the measured spread, derived the minimum strength any content signal needs to tip a group's opinion in a mean-field model.</li>
+    </ul>
     <p class="note" style="margin:0">Lead Designer, Google Developer Student Clubs, 2024 to January 2025.</p>
   </article>
 </section>
@@ -259,15 +270,19 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
 <section>
   <h2>Selected projects</h2>
   <div class="entry"><span class="entry-name">Cascade Bridge</span> · <a href="https://naturecipher-drought.pages.dev" rel="noopener noreferrer">naturecipher-drought.pages.dev</a><p>Drought forecasting for Kenyan counties up to three months ahead, from seasonal weather forecasts rather than satellite images. Top 10, IGAD ICPAC hackathon, 2026, with Nature Cipher.</p></div>
+  <div class="entry"><span class="entry-name">Monarch</span> · <a href="https://monarch-4iy.pages.dev/corpus/" rel="noopener noreferrer">monarch-4iy.pages.dev/corpus</a> · <a href="https://github.com/brn-mwai/monarch" rel="noopener noreferrer">source</a><p>The instrument behind the dissertation, live with its measured corpus. It rates how far a piece of written media leans on emotion rather than reasoning, from Meta's TRIBE v2 prediction of the cortical response. The site shows all 400 scanned items with their scores and the predicted response on the cortical surface. It rates content, never a person. Open source.</p></div>
   <div class="entry"><span class="entry-name">Rovify</span> · <a href="https://rovify.io" rel="noopener noreferrer">rovify.io</a><p>Events platform on Base. Third place globally, USD 20,000, Base Batches 001, 2025, from over 1,200 entries. Winner in the Africa round, with two teammates.</p></div>
   <div class="entry"><span class="entry-name">Oryn</span> · <a href="https://oryn.cc" rel="noopener noreferrer">oryn.cc</a><p>Reads invoices and contracts and turns them into payment links. Third place, AI Mashinani, run by the Claude community in Kenya, 2026.</p></div>
   <div class="entry"><span class="entry-name">PayStream</span><p>Payroll paid in stablecoin, with the compliance and conversion steps automated. First place, Qdrant track, AI Genesis, Dubai, 2025.</p></div>
+  <div class="entry"><span class="entry-name">Tollgate</span><p>Lets a website charge AI bots per request in USDC instead of blocking them, using HTTP 402 payments on Circle's Arc network, with a publisher dashboard and middleware for Express and Hono. Built for Circle's Agentic Economy on Arc hackathon, April 2026.</p></div>
 </section>
 
 <section id="built">
   <h2>Tools I have built</h2>
   <div class="entry"><span class="entry-name">FDE Accelerator</span><p>The engine behind the practice. Turns a client's scattered data into an ontology and knowledge graph, sharpened on each paid engagement. Rust backend, running as the FDE Workbench inside Wispy Console. Kept internal rather than sold as a product.</p></div>
+  <div class="entry"><span class="entry-name">Wispy Console</span><p>Windows workspace for building with coding agents: terminals, projects, per-project secrets encrypted by Windows, a code graph, and a task board that Claude Code, Codex, Gemini and OpenCode write to. Rust and React on Tauri 2, shipped as an installer at version 1.1.0. Closed source.</p></div>
   <div class="entry"><span class="entry-name">Wispy</span> · <a href="https://wispy.cc" rel="noopener noreferrer">wispy.cc</a> · <a href="https://www.npmjs.com/package/wispy-ai" rel="noopener noreferrer">npm</a> · <a href="https://github.com/brn-mwai/wispy" rel="noopener noreferrer">source</a><p>Autonomous AI agent platform. One command gives you a running agent that can act and communicate across 11 channels. Built for the Google Gemini hackathon.</p></div>
+  <div class="entry"><span class="entry-name">Wispy Desktop</span><p>Meeting assistant for Windows. Transcribes both sides of a call on the device with Whisper and answers questions with Claude from your own notes, searched with embeddings that also run locally. Electron and React.</p></div>
   <div class="entry"><span class="entry-name">codegraph</span> · <a href="https://github.com/brn-mwai/codegraph" rel="noopener noreferrer">github.com/brn-mwai/codegraph</a><p>Turns a codebase into a map an AI can navigate. Parses the repo with tree-sitter into a typed graph, so an agent can find where something is defined and what breaks if it changes, instead of searching blindly.</p></div>
   <div class="entry"><span class="entry-name">Scribe</span> · <a href="https://github.com/brn-mwai/scribe" rel="noopener noreferrer">github.com/brn-mwai/scribe</a><p>Keeps a repository's agent instructions accurate on its own. When the code changes and the docs go stale, it notices and opens a merge request to fix them.</p></div>
   <div class="entry"><span class="entry-name">Agent Reach</span><p>Gives an AI agent access to the internet across 15 platforms through one interface, with fallbacks when a source is unavailable.</p></div>
@@ -277,7 +292,7 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
   <h2>Recognition and programmes</h2>
   <dl class="rows">
     <div class="row"><dt>AXI Mobility</dt><dd>KES 300,000 proof-of-concept grant, Kenya Climate Innovation Center, 2026 · Timbuktoo Green Tech Hub · NVIDIA Inception · 500 Global Pre-Acceleration Academy, Nairobi, October 2025 · African Union Young Innovation Hub, Africa Climate Summit 2025, Ethiopia</dd></div>
-    <div class="row"><dt>REVLOG</dt><dd>Finalist, ACEP Innovation Challenge, 2026 · Incubation and grant support from LOT29, GIZ, Siemens Stiftung and Seedstars</dd></div>
+    <div class="row"><dt>Revlog</dt><dd>Finalist, ACEP Innovation Challenge, Future of Energy Conference, Accra, August 2026 · Incubation and grant support from LOT29, GIZ, Siemens Stiftung and Seedstars</dd></div>
   </dl>
 </section>
 
@@ -291,7 +306,22 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
 
 <section>
   <h2>Referees</h2>
-  <p class="aside">Available on request.</p>
+  <div class="referees">
+    <div class="referee">
+      <p class="entry-name">Kenneth Kanda</p>
+      <p>Deputy Director, Digital Infrastructure and Services</p>
+      <p>Kenya Space Agency</p>
+      <p><span data-k="a2VubmV0aC5rYW5kYUBrc2EuZ28ua2U=" data-link="mail"></span></p>
+      <p><span data-k="KzI1NCA3MTAgMzAwMjM1"></span></p>
+    </div>
+    <div class="referee">
+      <p class="entry-name">Dr. Songa Mutambi</p>
+      <p>Dissertation supervisor, Department of Natural Sciences</p>
+      <p>The Catholic University of Eastern Africa</p>
+      <p><span data-k="Y211dGFtYmlAY3VlYS5lZHU=" data-link="mail"></span></p>
+      <p><span data-k="KzI1NCA3MjQgNTA4NTc1"></span></p>
+    </div>
+  </div>
 </section>
 
 <footer>
@@ -303,13 +333,13 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
 
 <script>
 // Addresses are assembled here rather than written into the markup, so a
-// crawler reading the source finds nothing to take. The phone number is
+// crawler reading the source finds nothing to take. My own phone number is
 // print-only: it belongs on the CV a person downloads, not on an open page.
 (function () {
-  function reveal(id, prefix) {
-    var el = document.getElementById(id);
-    if (!el) return;
+  var SCHEMES = { mail: "mai" + "lto:" };
+  function reveal(el) {
     var value = atob(el.getAttribute("data-k"));
+    var prefix = SCHEMES[el.getAttribute("data-link")];
     el.removeAttribute("data-k");
     if (!prefix) { el.textContent = value; return; }
     var link = document.createElement("a");
@@ -322,8 +352,7 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
     });
     el.replaceWith(link);
   }
-  reveal("reach", "mai" + "lto:");
-  reveal("tel", null);
+  document.querySelectorAll("[data-k]").forEach(reveal);
 })();
 </script>
 </body>
