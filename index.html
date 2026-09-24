@@ -76,6 +76,17 @@ h2{margin:0 0 1.1rem; font-size:.735rem; font-weight:640; letter-spacing:.14em; 
 .referee .entry-name{color:var(--ink)}
 .referees + .aside{margin-top:.9rem}
 
+.work{display:grid; grid-template-columns:repeat(auto-fill,minmax(18rem,1fr)); gap:1.6rem 1.4rem}
+.shot{margin:0}
+.shot a{display:block; border:0}
+.shot img{display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; object-position:top;
+  border:1px solid var(--rule); border-radius:10px; background:var(--card); transition:border-color .15s, transform .15s}
+.shot a:hover img{border-color:var(--accent); transform:translateY(-2px)}
+.shot figcaption{margin-top:.6rem; font-size:.9rem; color:var(--muted)}
+.shot figcaption .entry-name{color:var(--ink)}
+.shot figcaption .note{display:block; margin-top:.1rem}
+@media (prefers-reduced-motion: reduce){ .shot img{transition:none} .shot a:hover img{transform:none} }
+
 footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); font-size:.85rem; color:var(--faint); display:flex; flex-wrap:wrap; gap:.4rem 1.25rem; justify-content:space-between}
 
 @page{ size:A4; margin:11mm 13mm; }
@@ -84,7 +95,7 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
   body{font-size:9pt; line-height:1.32}
   main{padding:0; max-width:none}
   a{border-bottom:0; color:#111}
-  .actions,footer{display:none}
+  .actions,footer,.work-section{display:none}
   .print-only{display:inline}
   h1{font-size:21pt}
   .role{font-size:11pt}
@@ -138,10 +149,45 @@ footer{margin-top:3.5rem; padding-top:1.4rem; border-top:1px solid var(--rule); 
 
   <div class="actions">
     <a class="btn btn-primary" href="cv-brian-mwai.pdf">Download CV, PDF</a>
+    <a class="btn" href="#work">Selected work</a>
     <a class="btn" href="#experience">Experience</a>
     <a class="btn" href="#built">Things I have built</a>
   </div>
 </header>
+
+<section id="work" class="work-section">
+  <h2>Selected work</h2>
+  <div class="work">
+    <figure class="shot"><a href="https://www.aximobility.com" rel="noopener noreferrer"><img src="work/axi.webp" width="1200" height="750" loading="lazy" decoding="async" alt="AXI Mobility website home page"></a>
+      <figcaption><span class="entry-name">AXI Mobility</span> · aximobility.com<span class="note">Fleet intelligence for African operators. Brand, site, dashboard and driver app.</span></figcaption></figure>
+    <figure class="shot"><a href="https://revlog.africa" rel="noopener noreferrer"><img src="work/revlog.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Revlog website home page"></a>
+      <figcaption><span class="entry-name">Revlog</span> · revlog.africa<span class="note">Battery collection and recycling. Company site.</span></figcaption></figure>
+    <figure class="shot"><a href="https://cycletrack.revlog.africa" rel="noopener noreferrer"><img src="work/cycletrack.webp" width="1200" height="750" loading="lazy" decoding="async" alt="CycleTrack console entry page"></a>
+      <figcaption><span class="entry-name">CycleTrack</span> · cycletrack.revlog.africa<span class="note">Custody record for each battery, producer to offtaker.</span></figcaption></figure>
+    <figure class="shot"><a href="https://portal.revlog.africa" rel="noopener noreferrer"><img src="work/revlog-portal.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Revlog collection portal"></a>
+      <figcaption><span class="entry-name">Revlog Collection Portal</span> · portal.revlog.africa<span class="note">Book a collection, report an unsafe battery, find a drop-off point.</span></figcaption></figure>
+    <figure class="shot"><a href="https://app.getodyssey.africa" rel="noopener noreferrer"><img src="work/odyssey.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Odyssey sign-in page with transport map artwork"></a>
+      <figcaption><span class="entry-name">Odyssey</span> · app.getodyssey.africa<span class="note">Transport investment intelligence across all 47 counties, for Celeri Group.</span></figcaption></figure>
+    <figure class="shot"><a href="https://brn-mwai.github.io/gleam/" rel="noopener noreferrer"><img src="work/gleam.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Gleam product page"></a>
+      <figcaption><span class="entry-name">Gleam</span> · brn-mwai.github.io/gleam<span class="note">Screen buddy for Windows. Champion, Claude Community Kenya Fable 5.1 Build Day.</span></figcaption></figure>
+    <figure class="shot"><a href="https://wispy.cc" rel="noopener noreferrer"><img src="work/wispy.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Wispy website home page"></a>
+      <figcaption><span class="entry-name">Wispy</span> · wispy.cc<span class="note">Autonomous AI agent platform across 11 channels.</span></figcaption></figure>
+    <figure class="shot"><a href="https://termly.cc" rel="noopener noreferrer"><img src="work/termly.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Termly website home page"></a>
+      <figcaption><span class="entry-name">Termly</span> · termly.cc<span class="note">Loan covenant monitoring: AI reads the loan documents and tracks compliance. Built for the LMA EDGE Hackathon 2026.</span></figcaption></figure>
+    <figure class="shot"><a href="https://sprrw.app" rel="noopener noreferrer"><img src="work/sparrow.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Sparrow AI website home page"></a>
+      <figcaption><span class="entry-name">Sparrow AI</span> · sprrw.app<span class="note">Sales training: practise calls with AI prospects that push back. Built for the Google Cloud AI Partner Catalyst Hackathon.</span></figcaption></figure>
+    <figure class="shot"><a href="https://oryn.cc" rel="noopener noreferrer"><img src="work/oryn.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Oryn website home page"></a>
+      <figcaption><span class="entry-name">Oryn</span> · oryn.cc<span class="note">AI collection agent for unpaid invoices. Third place, AI Mashinani 2026.</span></figcaption></figure>
+    <figure class="shot"><a href="https://rovify.io" rel="noopener noreferrer"><img src="work/rovify.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Rovify website home page"></a>
+      <figcaption><span class="entry-name">Rovify</span> · rovify.io<span class="note">Third place globally, Base Batches 001, 2025.</span></figcaption></figure>
+    <figure class="shot"><a href="https://hausorlabs.tech" rel="noopener noreferrer"><img src="work/hausor-labs.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Hausor Labs website home page"></a>
+      <figcaption><span class="entry-name">Hausor Labs</span> · hausorlabs.tech<span class="note">Research lab site: AI and blockchain for infrastructure in the Global South.</span></figcaption></figure>
+    <figure class="shot"><a href="https://naturecipher-drought.pages.dev" rel="noopener noreferrer"><img src="work/cascade-bridge.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Cascade Bridge drought forecast bulletin"></a>
+      <figcaption><span class="entry-name">Cascade Bridge</span> · naturecipher-drought.pages.dev<span class="note">Drought forecasts three months ahead. Top 10, IGAD ICPAC hackathon.</span></figcaption></figure>
+    <figure class="shot"><a href="https://monarch-4iy.pages.dev/corpus/" rel="noopener noreferrer"><img src="work/monarch.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Monarch corpus page showing 400 scanned items"></a>
+      <figcaption><span class="entry-name">Monarch</span> · monarch-4iy.pages.dev<span class="note">The instrument behind the dissertation, with its 400-item corpus.</span></figcaption></figure>
+  </div>
+</section>
 
 <section>
   <h2>The practice</h2>
